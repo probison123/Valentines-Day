@@ -1,0 +1,289 @@
+html {
+    background-color: #F2AEC7;
+    width: auto;
+    font-family: 'Redressed', cursive;
+  }
+  header {
+    background-image: url(Images/HeaderBackground.png);
+    height: 10em;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 4em;
+    text-align: center;
+    color: #000000;
+    font-family: 'The Nautigal', cursive;
+    padding-top: 1em;
+  }
+  h1{
+    padding-top: 6%;
+  }
+  h2 {
+      align-items: center;
+      font-size: 7em;
+      justify-content: center;
+      margin-bottom: .5em;
+      min-height: 10vh;
+      text-align: center;
+      font-family: 'Niconne', cursive;
+    }
+    h4 {
+      align-items: center;
+      font-size: 4em;
+      justify-content: center;
+      margin-bottom: .5em;
+      min-height: 10vh;
+      text-align: center;
+      font-family: 'Niconne', cursive;
+    }
+    .cupid {
+      width: 200px;
+      height: auto;
+    }
+    .calanderimg {
+      height: 125px;
+      width: auto;
+      opacity: 50%;
+      }
+    ul, ol {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-gap: 1em;
+      margin: 0 auto;
+      max-width: 64em;
+      padding: 0;
+      color: black;
+    }
+    ol {
+      color: white;
+    }
+    li {
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      margin-left: 0;
+      font-size: 2em;
+    }
+    
+  
+    
+  
+    .grid {
+      display: grid;
+      grid-template-columns: 300px auto 300px;
+      grid-template-rows: /*1*/.025fr /*2*/3fr /*3*/.005fr;
+      grid-gap: 1em;
+    }
+    header {
+      /* Start on Row 1 */
+      grid-row: 1;
+      /* Start on the first column line and extend all the to the last column line */
+      grid-column: 1 / 4;
+      margin-top: -1.5em;
+    }
+    
+    .sidebar-left {
+      /* Start on Row 2 */
+      grid-row: 2;
+      /* Start on the first column line and stop at the next column line */
+      grid-column: 1 / 2;
+      align-items: center;
+      font-size: 2em;
+    }
+    
+    article {
+      /* Start on Row 2 */
+      grid-row: 2;
+      /* Start on the second column line and stop at the third column line */
+      grid-column: 2 / 3;
+    }
+    
+    .sidebar-right {
+      /* Start on Row 2 */
+      grid-row: 2;
+      /* Start on the third column line and stop at the last column line */
+      grid-column: 3 / 4;
+      align-items: center;
+      font-size: 2em;
+      
+    }
+    footer {
+      display: grid;
+    /* Start on Row 1 */
+    grid-row: 4;
+    /* Start on the first column line and extend all the to the last column line */
+    grid-column: 1 / 4;
+    background-image: url(Images/HeaderBackground.png);
+    height: 8em;
+    width: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: #000000;
+    margin-bottom: -1em;
+    font-size: 2em;
+  }
+  footer a:link {
+    color: #F85CA2;
+  }
+  footer a:visited {
+    color: #F97EB3;
+  }
+  .footer {
+    margin: auto;
+  }
+  .sidebar-left, .sidebar-right {
+    padding: 10px;
+  }
+  .romance {
+    grid-row: 3;
+    grid-column: 1 / 3;
+    font-size: 2em;
+  }
+  #up-arrow,#down-arrow{
+    max-width: 100px;
+    max-height: 100px;
+  }
+  #total-count{
+    font-weight: 700;
+    font-size: 50px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  #myDIV {
+    padding: 16px;
+    font-size: 2em;
+  }
+  .questions {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 25%;
+    font-size: 1.5em;
+  }
+  #myInput, #mInput, #fill, #Input, #input {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  }
+  #p2, #much, #other{
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  #bigger, #tell {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
+  }
+  #demo {
+    font-size: 75%;
+    font-family: 'Redressed', cursive;
+  }
+  /* When the viewport gets smaller than 800px the font reverts back the default font */
+  @media all and (min-width: 800px) {
+   
+    #repeat {
+      font-size: 2em;
+    }
+  }
+  /* the look of the grid layout*/
+  @media all and (max-width: 1000px) {
+    ul, ol {
+      grid-gap: .25em;
+    }
+    
+    ul.weekdays li {
+      font-size: 0;
+    }
+    
+    ul.weekdays > li abbr:after {
+      /* The "content" is telling the browser to change the week 
+       days to their abbreviations that are in the HTML file when the veiwport gets under 
+       800px*/
+       content: attr(title); 
+        font-size: 20px;
+      text-align: center;
+      }
+      .calanderimg {
+        width: 75px;
+        height: auto;
+      }
+      
+      .grid {
+        display: block;
+        /* controls width of columns*/
+        grid-template-columns: 150px auto 150px;
+        /*controls height of the rows*/
+        grid-template-rows: 1fr 100fr 1fr 1fr;
+        grid-gap: 1em;
+      }
+      header {
+        /* Start on Row 1 */
+        grid-row: 1;
+        /* Start on the first column line and extend all the to the last column line */
+        grid-column: 1 / 4;
+        margin-top: -1.5em;
+        font-size: 1.5em;
+      }
+      
+      .sidebar-left {
+        /* Start on Row 2 */
+        grid-row: 2;
+        /* Start on the first column line and stop at the next column line */
+        grid-column: 1 / 2;
+        align-items: center;
+        font-size: 2em;
+      }
+      
+      article {
+        /* Start on Row 2 */
+        grid-row: 2;
+        /* Start on the second column line and stop at the third column line */
+        grid-column: 2 / 3;
+      }
+      
+      .sidebar-right {
+        /* flexbox takes two divs and puts one on top of the other when told to be a column for small veiwports */
+        display: flex;
+        flex-direction: column;
+        /* Start on Row 2 */
+        grid-row: 2;
+        /* Start on the third column line and stop at the last column line */
+        grid-column: 3 / 4;
+        align-items: center;
+        font-size: 2em;
+        margin: 0em;
+      }
+      
+      .Why {
+        width: 550px;
+      }
+      footer {
+      /* Start on Row 1 */
+      grid-row: 3;
+      /* Start on the first column line and extend all the to the last column line */
+      grid-column: 1 / 4;
+    }
+    .sidebar-left, .sidebar-right {
+      padding: 10px;
+    }
+    h2 {
+      font-size: 5em;
+    }
+    .romance {
+      grid-row: 3;
+      grid-column: 1 / 3;
+      font-size: 2em;
+      }
+      #much{
+        text-align: center;
+        font-size: .75em;
+      }
+  }
+
+  
+  
+  /*CSS is compliant per W3C CSS Validation Service*/
+  /* Page is responsive and valid using emulator LT Browser*/
